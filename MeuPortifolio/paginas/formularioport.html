@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Fale Conosco - Atalaias do Rei </title>
+		<link rel = "shortcut icon" href = "../imagens/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="../css/estiloport.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/estiloformulario.css"/>
+		<script type="text/javascript">
+			function validar_form_contato(){
+				var nome = form.nome.value;
+				var email = form.email.value;
+				var endereco = form.endereco.value;
+				var telefone = form.telefone.value;
+				
+				if(nome == ""){
+					alert("Campo nome é obrigatorio");
+					form.nome.focus();
+					return false;
+				}else if(email == ""){
+					alert("Campo email é obrigatorio");
+					form.email.focus();
+					return false;
+				}else if(endereco == ""){
+					alert("Campo endereço é obrigatorio");
+					form.endereco.focus();
+					return false;
+				}else(telefone == ""){
+					alert("Campo telefone é obrigatorio");
+					form.telefone.focus();
+					return false;
+				}
+			}
+		</script>
+		
+	</head>
+	<body>
+		<nav class="menu">
+				<ul class="menu-list">
+					<li><a href="../index.html"> Início </a></li>
+					<li><a href="sobreport.html"> Sobre </a></li>
+					<li><a href="#"> O que faço </a>
+						<ul class="sub-menu">
+							<li><a href="biografiaport.html"> Biografia </a></li>
+							
+						</ul>
+					</li>
+					<li><a href="formularioport.html"> Fale Conosco  </a></li>	
+				</ul>
+			</nav>
+			<br></br>
+			<ol>
+			   <b>
+                   <li>***SE VOCÊ, JOVEM DE 10 A 15 ANOS É..**</li>
+                   <li>Comprometido</li>
+                   <li>Gosta de aventuras</li>
+                   <li>Curte Natureza</li>
+			       <li>Fazer novas amizades</li>
+			       <li>#FAÇA LOGO O SEU CADASTRO!!!#</li>
+			   </b>
+            </ol>
+			<section>
+			<label class="title01"> Formulários - coleta de informações pessoais </label>
+			<form name="form" method="post" action="../index.html" >
+					
+				<div>
+				    <legend>Informações Pessoais</legend> 
+					<br></br>
+					<label class="name">Nome Completo:</label>
+					<input type="text" name="nome" placeholder="Nome Completo" required>
+					
+				</div>
+				<div>
+					<label class="email">E-mail:</label>
+					<input type="email" name="email" placeholder="Seu melhor e-mail" required>
+				</div>
+				<div>
+					<label class="datanascimento">Data de Nascimento:</label>
+					<input type="data" name="data" id="datanascimento" />
+				</div>
+				<div>
+					<label class="endereco">Endereço:</label>
+					<input type="text" name="endereco" placeholder="seu endereço" required>
+				</div>
+				<div>
+					<label class="telefone">Telefone:</label>
+					<input type="text" name="telefone" placeholder="seu telefone" required>
+				</div>
+				  <div class="campo">
+                <label for="estado">Estado</label>
+                <select name="estado" name="texto" id="estado">
+                    <option value="">--</option>
+                    <option value="PR">PR</option>
+					<option value="PR">SP</option>
+					<option value="PR">RJ</option>
+					<option value="PR">ES</option>
+					<option value="PR">MG</option>
+					<option value="PR">DF</option>
+					<option value="PR">SC</option>
+                </select>
+                </div>
+				<div class="radio01">
+				    <label>Faixa etária:</label>
+					<div>
+						<input class="nameradio" type="radio"  name="idade" value="menor/igual18"/><label>Menor/Igual a 18 anos </label>
+					</div>
+                    <div >					
+						<input class="nameradio" type="radio"  name="idade" value="maior18"/><label>Maior de 18 anos </label>
+					</div>	
+				</div>
+					<div class="button">
+						<button type="reset">  Limpar formulário  </button>
+						<button onClick="validar_form_contato()">  Enviar cadastro  </button>
+						
+					</div>
+				</form>
+				
+		</section>
+		   <ol class="bordalista">
+			   <b>
+                   <li>***JOVEM DE 10 A 15 ANOS..**</li>
+                   <li>Não perca tempo</li>
+			       <li>#FAÇA LOGO O SEU CADASTRO!!!#</li>
+			   </b>
+            </ol>
+		<div class="Clock">
+		<center>	
+			<SCRIPT LANGUAGE="JAVASCRIPT">
+			<!--
+
+				var now = new Date();
+				var mName = now.getMonth() +1 ;
+				var dName = now.getDay() +1;
+				var dayNr = now.getDate();
+				var yearNr=now.getYear();
+				if(dName==1) {Day = "Domingo";}
+				if(dName==2) {Day = "Segunda-feira";}
+				if(dName==3) {Day = "Terça-feira";}
+				if(dName==4) {Day = "Quarta-feira";}
+				if(dName==5) {Day = "Quinta-feira";}
+				if(dName==6) {Day = "Sexta-feira";}
+				if(dName==7) {Day = "Sábado";}
+				if(mName==1){Month = "Janeiro";}
+				if(mName==2){Month = "Fevereiro";}
+				if(mName==3){Month = "Março";}
+				if(mName==4){Month = "Abril";}
+				if(mName==5){Month = "Maio";}
+				if(mName==6){Month = "Junho";}
+				if(mName==7){Month = "Julho";}
+				if(mName==8){Month = "Agosto";}
+				if(mName==9){Month = "Setembro";}
+				if(mName==10){Month = "Outubro";}
+				if(mName==11){Month = "Novembro";}
+				if(mName==12){Month = "Dezembro";}
+				if(yearNr < 2000) {Year = 1900 + yearNr;}
+				else {Year = yearNr;}
+				var todaysDate =(" " + Day + ", " + dayNr + "/" + Month + "/" + Year);
+
+				document.write('  '+todaysDate);
+
+				//-->
+			</SCRIPT>
+
+	  
+			<SPAN ID="Clock">00:00:00</SPAN>
+
+			<SCRIPT LANGUAGE="JavaScript">
+			<!--
+			  var Elem = document.getElementById("Clock");
+			  function Horario(){ 
+				var Hoje = new Date(); 
+				var Horas = Hoje.getHours(); 
+				if(Horas < 10){ 
+				  Horas = "0"+Horas; 
+				} 
+				var Minutos = Hoje.getMinutes(); 
+				if(Minutos < 10){ 
+				  Minutos = "0"+Minutos; 
+				} 
+				var Segundos = Hoje.getSeconds(); 
+				if(Segundos < 10){ 
+				  Segundos = "0"+Segundos; 
+				} 
+				Elem.innerHTML = Horas+":"+Minutos+":"+Segundos; 
+				} 
+				window.setInterval("Horario()",1000);
+			//-->
+			</SCRIPT>
+		</center>
+		</div>
+		<aside>
+			<center><p><br> "Venha fazer parte do nosso clube".</br></p></center>
+		</aside>
+		<footer>
+			<center> Direito exclusivo do autor 2020 Código Fonte@</center>
+		</footer>
+		
+		
+	</body>
+	
+</html>

@@ -1,0 +1,115 @@
+.title01 {
+	border: 2px solid #008000;
+	font-size: 16px;
+	border-radius: 1em;
+	margin:5px 0 5px 34%;
+    width: 450px;
+	padding: 1em;
+	@media(max-width: 850px){
+		font-size:1em;
+	}	
+	@media(max-width: 425px){
+		font-size:1.6em;
+	}	
+	
+
+}	
+/* Centralizar o formulário na página e visualiza as bordas*/
+form {
+    margin:5px 0 5px 34%;
+    width: 450px;
+    padding: 1em;
+    border: 2px solid #008000;
+    border-radius: 1em;
+	@media(max-width: 850px){
+		font-size:1em;
+	}	
+	@media(max-width: 425px){
+		font-size:1.6em;
+	}	
+
+}
+form div + div {
+    margin-top: 2em;
+	font-size: 12px;
+	@media(max-width: 850px){
+		font-size:1em;
+	}	
+	@media(max-width: 425px){
+		font-size:1.6em;
+	}	
+
+}
+/*Para deixar todas as labels no mesmo tamanho e alinhadas */
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+	font-size: 12px;
+	@media(max-width: 850px){
+		font-size:1em;
+	}	
+	@media(max-width: 425px){
+		font-size:1.6em;
+	}	
+
+}
+/* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+input, textarea {
+    font: 0,5em sans-serif;
+    /* Formata o mesmo tamanho a todos os campos de texto */
+    width:250px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* Harmoniza o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+	@media(max-width: 850px){
+		font-size:1em;
+	}	
+	@media(max-width: 425px){
+		font-size:1.6em;
+	}	
+
+}
+/* Destaca os elementos ativos */
+input:focus, textarea:focus {
+    border-color: #000;
+}
+/* Alinha corretamente os campos de texto de várias linhas com a label, espaço suficiente para digitar*/
+textarea {
+    vertical-align:top;
+    height: 5em;
+    resize: vertical;    /* Permite aos usuários redimensionarem verticalmente. Não funciona em todos os navegadores */
+}
+.radio01 {
+    display: flex;
+    flex-direction:column;
+}
+.nameradio {
+	margin:0;
+	padding:0;
+	width:20px;
+}
+.radio01 >div>label{
+	width:300px;
+}
+.radio01 >div{
+	margin-top:0;
+}
+/* Posicina os botões na mesma posição dos campos de texto */
+.button {   
+    margin-left:38%;
+    	
+}
+/* Margem extra que representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+.button >button {
+    margin-left:.5em;
+	width:150px;
+}
+.bordalista{
+	width:250px;
+	border: 2px solid black;
+	margin-bottom:5%;
+	
+	
+}
